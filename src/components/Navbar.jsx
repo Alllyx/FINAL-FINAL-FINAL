@@ -55,6 +55,13 @@ export default function Navbar({ isScrolled }) {
               }}
             />
           </div>
+          <Link to="/profile">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            alt=""
+            className="nav__avatar"
+          />
+        </Link>
           <button onClick={() => signOut(firebaseAuth)}>
             <FaPowerOff />
           </button>
@@ -68,6 +75,13 @@ const Container = styled.div`
   .scrolled {
     background-color: black;
   }
+  .nav__avatar {
+    cursor: pointer;
+    position: relative;
+    right: 4px;
+    margin-bottom: 0rem;
+    width: 30px;
+}
   nav {
     position: sticky;
     top: 0;
